@@ -79,6 +79,11 @@ vim.o.showtabline = 2
 -- 使用增强状态栏插件后不再需要 vim 的模式提示
 vim.o.showmode = false
 
+vim.o.nolist = true
+
+--  与操作系统互通,需要下载第三方工具: https://github.com/equalsraf/win32yank/releases
+vim.opt.clipboard = "unnamedplus"
+
 
 -- 主题
 vim.o.background = "dark" -- or "light" for light mode

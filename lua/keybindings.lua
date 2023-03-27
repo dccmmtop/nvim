@@ -6,14 +6,14 @@ local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true }
 
 -- 取消 s 默认功能
-map("n", "s", "", opt)
+-- map("n", "s", "", opt)
 -- windows 分屏快捷键
-map("n", "sv", ":vsp<CR>", opt)
-map("n", "sh", ":sp<CR>", opt)
+-- map("n", "sv", ":vsp<CR>", opt)
+-- map("n", "sh", ":sp<CR>", opt)
 -- 关闭当前
-map("n", "sc", "<C-w>c", opt)
+-- map("n", "sc", "<C-w>c", opt)
 -- 关闭其他
-map("n", "so", "<C-w>o", opt)
+-- map("n", "so", "<C-w>o", opt)
 -- Alt + hjkl  窗口之间跳转
 map("n", "<A-h>", "<C-w>h", opt)
 map("n", "<A-j>", "<C-w>j", opt)
@@ -39,3 +39,7 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 map("n", "<C-j>", ":BufferLineCyclePrev<CR>", opt)
 map("n", "<C-k>", ":BufferLineCycleNext<CR>", opt)
 map("n", "<leader>cb", ":bd<CR>", opt)
+
+-- markdown 反引号快速输出
+map('i','·','``<left>',opt)
+map('i','`','``<left>',opt)
